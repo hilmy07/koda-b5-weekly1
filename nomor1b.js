@@ -1,12 +1,12 @@
 // nomor 1 b
 function isPalindrome(str) {
     // Hilangkan spasi dan ubah ke huruf kecil
-    // const cleaned = str.replace(/\s+/g, '').toLowerCase();
+    const cleaned = str.replace(/\s+/g, '').toLowerCase();
 
     // Balikkan string
-    const reversed = str.split('').reverse().join('');
+    const reversed = cleaned.split('').reverse().join('');
 
-    if (str === reversed) {
+    if (cleaned === reversed) {
         console.log(`"${str}" ini palindrome.`);
     } else {
         console.log(`"${str}" ini bukan palindrome.`);
@@ -16,6 +16,7 @@ function isPalindrome(str) {
 console.log("=== Nomor 1 ===");
 isPalindrome("Buku ini bagus");
 isPalindrome("Apa");
+
 
 
 
