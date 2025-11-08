@@ -7,13 +7,14 @@ function isPalindrome(str) {
     const reversed = cleaned.split('').reverse().join('');
 
     if (cleaned === reversed) {
-        console.log(`"${str}" ini bukan palindrome.`);
-    } else {
         console.log(`"${str}" ini palindrome.`);
+    } else {
+        console.log(`"${str}" ini bukan palindrome.`);
     }
 }
 
 console.log("=== Nomor 1 ===");
 isPalindrome("Buku ini bagus");
 isPalindrome("Apa");
+
 
